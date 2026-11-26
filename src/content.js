@@ -8,11 +8,12 @@ export const site = {
   lastName: "ФАМИЛИЯ",                       // эта строка будет контурной
   years: "2021 — 2026",
   // Фоновое видео первого экрана. Пока пусто — показывается анимированный градиент.
-  // Положите файлы в public/media/hero/ и раскомментируйте:
+  // Положите файлы в public/media/hero/ и раскомментируйте.
+  // Пути пишите БЕЗ слеша в начале ("media/...") — так они работают и на GitHub Pages.
   hero: {
-    desktop: "", // "/media/hero/hero_web.mp4",
-    mobile: "",  // "/media/hero/hero_mobile.mp4",
-    poster: "",  // "/media/hero/hero_poster.jpg",
+    desktop: "", // "media/hero/hero_web.mp4",
+    mobile: "",  // "media/hero/hero_mobile.mp4",
+    poster: "",  // "media/hero/hero_poster.jpg",
   },
   // Шоурил — кнопка «Смотреть шоурил» на первом экране. .mp4 или ссылка YouTube/Vimeo.
   showreel: "",

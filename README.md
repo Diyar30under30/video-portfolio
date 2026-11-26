@@ -25,6 +25,13 @@ ffmpeg -i in.mov -ss 3 -frames:v 1 -vf scale=960:-2 poster.jpg
 ```
 
 ## Публикация
+
+### GitHub Pages (уже настроено)
+Каждый `git push` в `main` сам собирает и публикует сайт (`.github/workflows/deploy.yml`).
+Адрес: `https://<логин>.github.io/<репозиторий>/`. Форма брифа здесь не отправляет заявки
+(нет серверной части) — посетителю предлагается написать в Telegram.
+
+### Cloudflare Pages (с рабочей формой)
 1. Залейте папку на GitHub.
 2. Cloudflare → Workers & Pages → Create → Pages → Connect to Git.
 3. Build command: `npm run build`, output: `dist`.
